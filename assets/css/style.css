@@ -13,6 +13,7 @@
 
 html, body {
 height: 100%;
+
 }
  body {
     background-image: url('../images/background_paper.png');
@@ -21,7 +22,7 @@ height: 100%;
  	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 
  }
-
+/*Hovering*/
 a:hover {
     color: #BDB8B8;
 }
@@ -32,6 +33,69 @@ a:visited {
 	text-decoration: none;
 }
 
+.boxpic:hover {
+    opacity: 0.5;
+}
+.linkedin:hover {
+	animation: bounce 1s;
+
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+
+
+
+#submit_button {
+	border: 3px solid #3a7999;
+}
+#submit_button:hover {
+	border: 3px dotted #3a7999;
+	color: #3a7999;
+	background: rgba(0,0,0,0);
+}
+
+#message:hover{
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+#email:hover{
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+#nameform:hover{
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+
+
+
+
+
+
+
+
+
+/*Wrapper Property*/
  #wrapper { 
 
  	position: absolute;
