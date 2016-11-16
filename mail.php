@@ -12,5 +12,5 @@ $recipient = "ddzmitry@yahoo.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo <a href="https://twitter.com/DzmitryDu">  ;
+echo "Thank You!" . " -" . "<a href='Thankyou.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>"
 ?>
