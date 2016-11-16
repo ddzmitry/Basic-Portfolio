@@ -60,31 +60,11 @@ a:visited {
 
 
 /*Animations Styles for form in Contact*/
+#contactform{
+	width: 515px;
 
-#submit_button {
-	border: 3px solid #3a7999;
-}
-#submit_button:hover {
-	border: 3px dotted #3a7999;
-	color: #3a7999;
-	background: rgba(0,0,0,0);
 }
 
-#message:hover{
-	background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
-}
-#email:hover{
-	background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
-}
-#nameform:hover{
-	background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
-}
 /*Animation for clock on hover*/
 @keyframes pulse {
   0% {

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				if (d.getSeconds() % 2 === 1) sep = ' '
 
 				var min = d.getMinutes();
-			if (min < 10) min = '0' + min + ampm;
+			if (min < 10) min = '0' + min;
 
 
 	c.innerHTML = hours + sep + min + ampm;
