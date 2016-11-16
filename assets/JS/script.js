@@ -1,5 +1,4 @@
-(function(){
-'use strict';
+
 
 document.addEventListener('DOMContentLoaded', function(){
 
@@ -32,5 +31,27 @@ document.addEventListener('DOMContentLoaded', function(){
 	}
 
 });
-   
-})();
+
+
+
+// function showMore(){ 
+// 	var Nav = document.getElementById('nav');
+
+// 	var displaySetting = Nav.style.display;
+
+// 	var Button = document.getElementById('button');
+
+
+// 	if (displaySetting === 'block') {
+
+// 		Nav.style.display ='none';
+
+// 		Button.innerHTML = 'Show';
+// 	}
+// 	else {
+// 		Nav.style.display = 'block';
+
+// 		Button.innerHTML = 'Hide';
+// 	}
+// };
+
