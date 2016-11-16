@@ -59,12 +59,6 @@ a:visited {
 }
 
 
-/*Animations Styles for form in Contact*/
-#contactform{
-	width: 515px;
-
-}
-
 /*Animation for clock on hover*/
 @keyframes pulse {
   0% {
@@ -197,7 +191,7 @@ a:visited {
  	padding-top: 10px;
 }
 
-
+/*Side Links*/
 
 
 #connect{
@@ -236,6 +230,7 @@ a:visited {
 	margin-left: 30px;
 
 }
+
 /*Footer Structure*/
 .footer {
  	background-color: grey;
@@ -251,18 +246,6 @@ a:visited {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #EBE3E3;
 	font-size: 15px;
-}
-/*form in Contact.html CSS*/
-.row {
-	padding-top: 10px;
-}
-
-#submit_button{
-	background-color: #4aaaa5;
-	width: 80px;
-	height: 30px;
-	color: white;
-	margin: 5px 0 25px 0;
 }
 
 /*Portfolio Structure*/
@@ -318,7 +301,7 @@ position: relative;
 
 
 }
-
+/*IndexHTML Clock*/
  #clock {
  	position: absolute;
 background-color: #4aaaa5;
@@ -330,6 +313,11 @@ background-color: #4aaaa5;
 	border-radius: 50px;
 	margin-top: 75px;
 	opacity: 0.5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 16px;
+	font-weight: 12px;
+	font
+
 }
 
 #current-time{
@@ -341,6 +329,52 @@ background-color: #4aaaa5;
 	opacity: none;
 }
 
+/*Form Contact*/
+#contactme {
+	position: relative;
+	width: 463px;
+	height: 420px;
+	background-color: white;
+	margin: 15px 50px 10px auto;
+
+}
+
+
+#Submit{
+	height: 30px;
+	width: 75px;
+	position: absolute;
+	bottom:60px;
+	right:390px;
+	background-color: #4aaaa5;/*#0ABAB5*/
+ 	font-family: 'Georgia', Times, Times New Roman, serif;
+ 	color: white;
+
+}
+#Submit:hover{
+
+            opacity: 0.5;
+}
+#name:hover{
+
+            opacity: 0.5;
+            background-color: #4aaaa5;;
+}
+#email:hover{
+
+            opacity: 0.5;
+            background-color: #4aaaa5;;
+}
+#phone:hover{
+
+            opacity: 0.5;
+            background-color: #4aaaa5;;
+}
+#message:hover{
+
+            opacity: 0.5;
+            background-color: #4aaaa5;
+}
 
 /*Use relative and absolute positioning ! 
 
@@ -349,3 +383,4 @@ use Z-index for stcicki footer
 Z-index overlaps a block ! 
 
 */
+
