@@ -1,18 +1,25 @@
-<?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$call = $_POST['call'];
-$website = $_POST['website'];
-$priority = $_POST['priority'];
-$type = $_POST['type'];
-$message = $_POST['message'];
-$formcontent=" From: $name \n Phone: $phone \n Call Back: $call \n Website: $website \n Priority: $priority \n Type: $type \n Message: $message";
-$recipient = "ddzmitry@yahoo.com";
-$subject = "Contact Form";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-
-
-echo"<a href='$Thankyou.html'>Link</a>"
+<?PHP
+ 
+require_once("fgcontactform.php");
+ 
+$formproc = new FGContactForm();
+ 
+//1. Add your email address here.
+//You can add more than one recipients.
+$formproc->AddRecipient('ddzmitry@yahoo.com'); //<<---Put your
+                                                          //email address here
+ 
+//2. For better security. Get a random string from
+// this link: http://tinyurl.com/randstr
+// and put it here
+$formproc->SetFormRandomKey('I6gZ4rfDzoQLxHM');
+ 
+if(isset($_POST['submitted']))
+{
+   if($formproc->ProcessForm())
+   {
+        $formproc->RedirectToURL("Thankyou.html");
+   }
+}
+ 
 ?>
